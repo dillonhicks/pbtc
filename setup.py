@@ -2,9 +2,12 @@
 from setuptools import setup, find_packages
 
 
+__version__ = '0.0.3'
+
+
 setup(
     name='pbtc',
-    version='0.0.1',
+    version=__version__,
     url='https://github.com/dillonhicks/pbtc',
     license='Apache License Version 2.0',
     author='Dillon Hicks',

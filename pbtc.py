@@ -15,6 +15,13 @@ except ImportError:
     from pathlib2 import Path, PurePath
 
 
+__version__ = '0.0.3'
+__all__ = (
+    'find_files',
+    'ProtobufPackage'
+)
+
+
 def find_files(directory, pattern):
     for entry in scandir(str(directory)):
         if entry.is_dir():
