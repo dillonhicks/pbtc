@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protobuftoolchain.test;
+
+message IncomingSignal {
+    uint32 frequency = 1;
+    uint32 power = 2;
+}
+
+message TestPayload {
+    string name = 1;
+    uint32 count = 2;
+}
+
+
+service Validation {
+    rpc EnsureCompilation(IncomingSignal) returns (TestPayload);
+}
